@@ -1,0 +1,21 @@
+/* Estilos CSS */
+
+.container {
+  margin: 20px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}

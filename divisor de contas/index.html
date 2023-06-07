@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Divisão de Contas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Divisão de Contas</h1>
+
+      <div class="input-group">
+        <input type="text" id="clienteInput" placeholder="Nome do cliente" />
+        <button onclick="adicionarCliente()">Adicionar Cliente</button>
+      </div>
+
+      <table id="clientesTable">
+        <tr>
+          <th>Cliente</th>
+        </tr>
+        <tr>
+          <td>Todos</td>
+        </tr>
+      </table>
+
+      <div class="input-group">
+        <input type="text" id="produtoInput" placeholder="Nome do produto" />
+        <input type="number" id="valorInput" placeholder="Valor" />
+        <input
+          type="text"
+          id="consumidoresInput"
+          placeholder="Clientes que consumiram (separados por vírgula)"
+        />
+        <button onclick="adicionarProduto()">Adicionar Produto</button>
+      </div>
+
+      <table id="produtosTable">
+        <tr>
+          <th>Produto</th>
+          <th>Valor</th>
+          <th>Consumidores</th>
+        </tr>
+      </table>
+
+      <div class="input-group">
+        <select id="clienteSelect">
+          <option value="">Selecione um cliente</option>
+        </select>
+        <input type="number" id="taxaInput" placeholder="Taxa de serviço (%)" />
+        <button onclick="adicionarTaxaServico()">
+          Adicionar Taxa de Serviço
+        </button>
+      </div>
+
+      <table id="taxaServicoTable">
+        <tr>
+          <th>Cliente</th>
+          <th>Taxa de Serviço (%)</th>
+        </tr>
+      </table>
+
+      <button onclick="calcularDivisao()">Calcular Divisão</button>
+
+      <h2>Resultado</h2>
+      <table id="resultadoTable">
+        <tr>
+          <th>Cliente</th>
+          <th>Valor Final</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="divisor.js"></script>
+  </body>
+</html>
